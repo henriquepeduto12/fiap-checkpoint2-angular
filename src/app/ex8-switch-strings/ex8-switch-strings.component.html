@@ -1,0 +1,6 @@
+<input [(ngModel)]="valor" />
+<p [ngSwitch]="valor">
+  <span *ngSwitchCase="'1'">Um</span>
+  <span *ngSwitchCase="'2'">Dois</span>
+  <span *ngSwitchDefault>Valor não reconhecido</span>
+</p>

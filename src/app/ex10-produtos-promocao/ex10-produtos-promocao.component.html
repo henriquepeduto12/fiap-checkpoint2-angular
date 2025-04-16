@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let p of produtos; trackBy: trackByProduto">
+    <span [ngClass]="{ promocao: p.promocao }">{{ p.nome }} - {{ p.preco }}</span>
+  </li>
+</ul>
+<p *ngIf="produtos.length === 0">Nenhum produto cadastrado</p>

@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let tarefa of tarefas; let i = index">
+    {{ tarefa }} <button (click)="remover(i)">Remover</button>
+  </li>
+</ul>
+<p *ngIf="tarefas.length === 0">Nenhuma tarefa pendente</p>

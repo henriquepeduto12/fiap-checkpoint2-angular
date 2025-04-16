@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let u of usuarios; trackBy: trackByUsuario">
+    {{ u.nome }}, idade: {{ u.idade }}
+  </li>
+</ul>
+<p *ngIf="usuarios.length === 0">Nenhum usuário cadastrado</p>

@@ -1,0 +1,4 @@
+<input [(ngModel)]="email" placeholder="Email" />
+<input [(ngModel)]="senha" type="password" placeholder="Senha" />
+<p *ngIf="mensagem">{{ mensagem }}</p>
+<button (click)="login()">Entrar</button>

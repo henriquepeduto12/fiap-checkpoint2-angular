@@ -1,0 +1,5 @@
+<p *ngIf="idade >= 18; else negado">Acesso permitido</p>
+<ng-template #negado><p>Acesso negado</p></ng-template>
+<button (click)="idade++">Aumentar</button>
+<button (click)="idade--">Diminuir</button>
+<p>Idade atual: {{ idade }}</p>
